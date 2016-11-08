@@ -13,3 +13,4 @@ Fakultě strojní ČVUT v Praze.
 	
 	*[schéma upwind](src/burgers_upwind.cpp)
 
+3. Nespojitosti, rychlost pohybu nespojitosti, entropická podmínka, [poznámky](lessons/03_nespojitosti.ipynb)
