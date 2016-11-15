@@ -14,3 +14,6 @@ Fakultě strojní ČVUT v Praze.
 	*[schéma upwind](src/burgers_upwind.cpp)
 
 3. Nespojitosti, rychlost pohybu nespojitosti, entropická podmínka, [poznámky](lessons/03_nespojitosti.ipynb)
+
+4. Lineární hyperbolický systém, [poznámky](lessons/04_linearni_system.ipynb)
+
