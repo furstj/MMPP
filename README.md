@@ -17,3 +17,5 @@ Fakultě strojní ČVUT v Praze.
 
 4. Lineární hyperbolický systém, [poznámky](lessons/04_linearni_system.ipynb)
 
+## Další materiály k předmětu
+Zdrojové kódy příkladů v jazyce C++ nebo Octave jsou k dispozici ve složce [src](src).
