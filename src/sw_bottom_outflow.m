@@ -3,7 +3,7 @@ clear all;
 % Reseni proudeni melke vody pres prekazku
 %
 %   h_t + (uh)_x = 0
-%   (hu)_t + (hu^2 + gh^2/2)_x = -g h b'
+%   (hu)_t + (hu^2 + gh^2/2)_x = -g h b' - cf*|u|*u
 %
 %   rovnice resime ve tvaru W_t + F(W)_x = Q, kde
 %   W = [h, q], F(W) = [q, q^2/h + gh^2/2] kde q = hu a 
