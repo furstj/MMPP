@@ -3,7 +3,8 @@
 //    (See accompanying file LICENSE_1_0.txt or copy at
 //          http://www.boost.org/LICENSE_1_0.txt)
 
-#pragma once
+#ifndef VECTOR_HPP
+#define VECTOR_HPP
 
 #include <array>
 
@@ -19,7 +20,7 @@ public:
 
   T& operator[](size_t i) { return data_[i]; }
   const T& operator[](size_t i) const { return data_[i]; }
- 
+
 private:
   std::array<T,N> data_;
 
@@ -70,4 +71,4 @@ inline T dot(const Vector<N,T>& u, const Vector<N,T>&v) {
   return res;
 }
 
-
+#endif

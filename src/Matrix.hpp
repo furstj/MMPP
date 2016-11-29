@@ -3,7 +3,8 @@
 //    (See accompanying file LICENSE_1_0.txt or copy at
 //          http://www.boost.org/LICENSE_1_0.txt)
 
-#pragma once
+#ifndef MATRIX_HPP
+#define MATRIX_HPP
 
 #include "Vector.hpp"
 
@@ -71,3 +72,5 @@ inline Vector<N,T> operator*(const Matrix<N,M,T>& a, const Vector<M,T>& x) {
     res[i] = dot(a[i], x);
   return res;
 }
+
+#endif
