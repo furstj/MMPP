@@ -78,7 +78,7 @@ for iter = 1:(10*n)
   t = t + dt;
   
   if (mod(iter,10)==0)
-    plot(x, W(1,:), x, W(2,:)./W(1,:)); axis([0 1 -2 2]);
+    plot(x, W(1,:), x, W(2,:)./W(1,:)); axis([0 1 -2 4]);
     pause(0.1);
   end
 end
