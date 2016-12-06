@@ -30,10 +30,12 @@ dx = L / n;
 x = dx/2:dx:(L-dx/2);
 
 % tvar dna
+bmax = 1.0; 
+#bmax = 0.1; 
 for i = 1:n
     if (0.3 < x(i) && x(i)<0.7)  
-      b(i) = (cos(pi*(x(i)-0.5)/0.2) + 1)/2 + (1-x(i))*0.2; 
-      bx(i) = ( (cos(pi*(x(i)+dx/2-0.5)/0.2) + 1)/2 - 
+      b(i) = bmax * (cos(pi*(x(i)-0.5)/0.2) + 1)/2 + (1-x(i))*0.2; 
+      bx(i) = bmax * ( (cos(pi*(x(i)+dx/2-0.5)/0.2) + 1)/2 - 
 		(cos(pi*(x(i)-dx/2-0.5)/0.2) + 1)/2 ) / dx - 0.2; 
     else
       b(i) = (1-x(i))*0.2;
