@@ -46,7 +46,7 @@ W(1,1:n)  = max(h0,max(b)+0.1) - b;
 W(2,1:n)  = W(1,:)*u0;
 
 plot(x, b, x, W(1,:)+b); axis([0 1 0 3]);
-disp("Stiskni enter pro pokracovani"); pause;
+disp('Stiskni enter pro pokracovani'); pause;
 t = 0;
 
 tend = 1;
