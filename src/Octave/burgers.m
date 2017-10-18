@@ -22,7 +22,7 @@ end
 plot(x, u); axis([0 1 -0.5 2.5]);
 disp("Stiskni enter pro pokracovani"); pause;
 
-dt = 0.1*dx;
+dt = 0.4*dx;
 
 t = 0;
 
@@ -30,10 +30,18 @@ for iter = 1:n
 
     % Okrajova podminka na leve casti intervalu
     f(1) = 0;
-    
-    % Numericky tok f
-    for i = 2:n+1
-	f(i) = u(i-1)^2/2;
+
+    % Okrajova podminka na prave casti intervalu
+    f(n+1) = 0;
+
+    % Numericky tok f(i)
+    for i = 2:n
+	a = (u(i-1) + u(i)) / 2;
+	if a>0 
+	   f(i) = u(i-1)^2/2;
+	else
+	   f(i) = u(i)^2/2;
+	end
     end
 
     un(1:n) = u(1:n) - dt/dx * (f(2:n+1) - f(1:n));
