@@ -15,7 +15,9 @@ Fakultě strojní ČVUT v Praze.
 
 3. Nespojitosti, rychlost pohybu nespojitosti, entropická podmínka, [poznámky](lessons/03_nespojitosti.ipynb)
 
-4. Lineární hyperbolický systém, [poznámky](lessons/04_linearni_system.ipynb)
+4. Nelineární stabilita, TVD schéma, [poznámky](lessons/03_tvd_schema.ipynb)
+
+5. Lineární hyperbolický systém, [poznámky](lessons/04_linearni_system.ipynb)
 
 ## Další materiály k předmětu
 Zdrojové kódy příkladů v jazyce C++ nebo Octave jsou k dispozici ve
