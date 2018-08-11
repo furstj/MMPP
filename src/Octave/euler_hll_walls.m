@@ -33,11 +33,11 @@ for i = 1:n
   end
 end
 
-plot(x, W(1,:)); axis([0 1 0 20]);
+plot(x, W(1,:),  "-b;rho;"); axis([0 1 0 20]);
 disp("Stiskni enter pro pokracovani"); pause;
 t = 0;
 
-for iter = 1:(4*n)
+for iter = 1:(20*n)
     
   rho = W(1,:);
   u   = W(2,:) ./ rho;
@@ -88,8 +88,9 @@ for iter = 1:(4*n)
   t = t + dt;
   
   if (mod(iter,10)==0)
-    plot(x, W(1,:), x, p/1e5); axis([0 1 0 20]);
-    pause(1);
+    a = sqrt(kappa*p./W(1,:));
+    plot(x, W(1,:),  "-b;rho;", x, W(2,:)./W(1,:)./a, "-k;u/a;", x, p/1e5, "-r;p;"); axis([0 1 -2 15]);
+    pause(0.2);
   end
 end
 

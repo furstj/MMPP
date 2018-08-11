@@ -62,7 +62,7 @@ int main() {
   double p0 = 1.e5;
   double T0 = 293.15;
   double r  = 287.05;
-  double p2 = 0.75*p0;
+  double p2 = 0.77*p0;
   
   const int n = 400;
   double dx = 1.0 / n;
